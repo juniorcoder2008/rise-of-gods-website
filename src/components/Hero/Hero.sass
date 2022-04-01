@@ -1,1 +1,61 @@
 @import '../../globals'
+
+#hero
+  margin-top: 5rem
+  .hero-heading
+    font-size: 3.5rem
+    font-family: $rubik
+    color: #fff
+    font-weight: 900
+    text-align: center
+    span
+      font-family: $rubik
+      color: $prime
+  .hero-desc
+    text-align: center
+    color: $gray
+    font-weight: 500
+    padding: 0 38rem
+    margin-top: 2em
+  .buttons
+    position: absolute
+    left: 50%
+    margin-top: 3rem
+    transform: translate(-50%)
+    button
+      background-color: $prime
+      color: #fff
+      padding: .6rem 2rem
+      border: none
+      cursor: pointer
+      transition: 100ms
+      &:hover
+        background-color: darken($prime, 5)
+    .windows
+      border-radius: 10rem 0 0 10rem
+    .mac
+      border-radius: 0 10rem 10rem 0
+      margin-left: .25rem
+  .values
+    display: grid
+    grid-template-columns: 20rem 15rem 22rem
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    margin-top: 16rem
+    .val
+      border-right: 2px solid $gray
+      &:last-child
+        border: none
+      h1
+        color: $prime
+        font-family: $rubik
+        text-transform: uppercase
+        font-weight: 900
+        text-align: center
+      h2
+        color: #fff
+        font-weight: 100
+        font-family: $rubik
+        text-transform: uppercase
+        text-align: center
