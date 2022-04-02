@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Import components
 import Navbar from './components/Navbar/Navbar';
@@ -8,9 +8,21 @@ import Discord from './components/Discord/Discord';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
+
+  const [scroll, setScroll] = useState(false);
+
+  window.addEventListener('scroll', e => {
+    if(window.scrollY === 0) {
+      setScroll(false);
+    }
+    else {
+      setScroll(true);
+    }
+  })
+
   return (
     <div className='App'>
-      <Navbar />
+      <Navbar scroll={scroll} />
       <Hero />
       <About />
       <Discord />

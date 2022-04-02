@@ -6,6 +6,13 @@
   justify-content: space-between
   align-items: center
   padding: 1.5rem 5rem
+  position: fixed
+  background: rgba( 29, 33, 37, 0.35 )
+  backdrop-filter: blur( 8px )
+  -webkit-backdrop-filter: blur( 9px )
+  top: 0
+  left: 0
+  z-index: 100
   .nav
     display: flex
     gap: 5rem
@@ -18,3 +25,5 @@
         transition: 100ms
         &:hover
           color: #fff
+.scroll
+  border-bottom: 2px solid lighten($second, 10)
